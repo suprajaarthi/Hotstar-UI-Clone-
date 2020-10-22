@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Disney+ Hotstar Clone</title>
+    <!-- Google Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body data-theme="dark-theme">
+
+    <div class="wrapper">
+        <div class="page-layout" id="appMainPageLayout">
+            <div class="page" id="loadingPage" data-page-state="visible">
+                <div class="page-content">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 838.1 635.46">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+
+                                    .cls-2 {
+                                        fill: none;
+                                        stroke-linecap: round;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 17px;
+                                        stroke: url(#linear-gradient);
+                                        stroke-dasharray: 1000;
+                                        stroke-dashoffset: 1000;
+                                        animation: star-animation 2s 2s ease-out forwards;
+                                    }
+
+                                    .cls-3 {
+                                        opacity: 0;
+                                        animation: pop 1s 4s ease-in forwards;
+                                    }
+
+                                    @keyframes star-animation {
+                                        to {
+                                            stroke-dashoffset: 0;
+                                        }
+                                    }
+
+                                    @keyframes pop {
+                                        to {
+                                            opacity: 1;
+                                        }
+                                    }
+                                </style>
+                                <linearGradient id="linear-gradient" x1="421.14" y1="554.43" x2="1046.14" y2="554.43"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#b1ffff" />
+                                    <stop offset="0.3" stop-color="#058bbf" />
+                                    <stop offset="0.5" stop-color="#085aa4" />
+                                    <stop offset="0.74" stop-color="#0d267a" />
+                                    <stop offset="1" stop-color="#101c50" />
+                                </linearGradient>
+                            </defs>
+                            <path id="path4541" fill="#fff"
+                                d="M659.09,763.1l1,.14c7.55,1,15,2.38,20.64,4.92,5.26,2.32,8.35,5.26,11.16,10.5,4.29,8,4.57,19.08.7,27.51-2.89,6.27-9.24,11.53-15,14.31a55.87,55.87,0,0,1-18.74,5.09,66.87,66.87,0,0,1-35.43-6.33c-6.33-3.09-14.06-8.42-18-15.27a15.22,15.22,0,0,1,.71-16.34c5.56-7.61,17.47-9.28,26.44-9,6.84.27,19.15,2.38,25.64,4.69,1.8.65,8.44,3.24,9.6,4.42a3.23,3.23,0,0,1,1,3.14c-1.49,4.53-12.51,6.92-15.7,7.4-8.52,1.31-12.94-1.92-22.63-5.74a33.15,33.15,0,0,0-8.06-2.21c-4.4-.42-9.71.81-10.55,5.61-.42,2.48,2.48,4.79,4.69,5.76a35.41,35.41,0,0,0,14.54,3.11c15.12.25,32.1-2.24,44.46-11,1.69-1.21,3.35-3,3.37-5.2.06-4.5-7.83-7.25-7.83-7.25-8.33-3.48-23.71-5.17-31.64-5.82-8.32-.72-21.4-1.8-24.55-2.26a36.83,36.83,0,0,1-9.55-2.37,11.89,11.89,0,0,1-6.38-7.26c-1.45-5.68.4-12.64,3.55-17.17,8.26-11.88,27.61-16.39,42.06-18.18,14-1.74,36.61-1.72,50.35,5.58,2.12,1.14,3.2,2.19,2.76,4.46-.9,4.26-4.1,7-8,8.21-4.07,1.29-12.48,1.8-16.18,2-16.57.93-36.58.44-52.36,4.74-1.24.36-3.37.93-4.07,1.71-2.47,2.68,4.59,3.44,6.1,3.75a5.5,5.5,0,0,0,1,.17l34.87,4.12m-98.55-73.87s2.7-4,5-7.11A128,128,0,0,1,582.65,664c1.71-1.46,3.73-3.12,3.73-3.12s-3.16.32-5,.69c-4.25.83-10.48,5-13.6,7.65-5.14,4.4-10.79,11.55-8.23,17.9.37.9.94,2.11.94,2.11m28.57,7.64a54.23,54.23,0,0,0,22.81-6.82c6.94-3.89,17.15-11.46,16.09-20.37a7.51,7.51,0,0,0-4.59-6.08c-3.1-1.34-4.71-1.12-8.67.06a26.21,26.21,0,0,0-6.88,2.9c-8,4.63-19.26,14.53-25.39,22.43-1.41,1.87-2.84,4-4,5.38-.7.88-1.25,1.69-1.18,1.9.24.9,8.61.82,11.78.6m-20.67,15.19c-.84.88-1.72,3-2.64,4.56a9,9,0,0,1-2,2.32c-2.11,1.56-3.91,1.63-5.95-.17a14.51,14.51,0,0,1-4.63-10.25c-.06-1.66.23-3.49-.09-4.9-.52-2.36-2.88-4.79-4.16-7.06a27.63,27.63,0,0,1-2.86-10.3c-.51-9.35,4.41-18,10.81-24.75A71.59,71.59,0,0,1,581,645.05c8.67-3.65,21.38-6.14,30.9-2.84a23.42,23.42,0,0,1,9.58,6.46,7.4,7.4,0,0,0,1.31,1.5,10.25,10.25,0,0,0,2.41.54,24.06,24.06,0,0,1,9.2,4.35c3.59,3.1,5.55,6.06,6.46,10.35,1.82,8.64-3.15,18.12-8.82,23.89-9.7,9.92-19.28,16.9-31.69,21.76-5.46,2.13-14,4.12-20.13,3.57-1.92-.16-3.9-.67-5.77-.79a27.33,27.33,0,0,1-4.81-1.24c-.47-.36-1.06-.66-1.17-.54m11.09,19.15a7.67,7.67,0,0,1,1.46.43c4.35,1.65,6.14,5.68,7.21,10.1,2.49,10.27,3.55,33,4,41.89.3,6.68.47,13.25.75,19.85.24,5.58.68,13-.48,18.25a8.6,8.6,0,0,1-3.49,5.19c-2.06,1.33-6.77,1.43-9.35.89-6.37-1.31-8.44-5.41-9.35-11.71-2.16-15-1.12-44.54.15-57,.43-4.12,2-17.29,4.12-22.82.74-1.86,2.3-5.61,5-5.08m-193.82,25s-9.49.68-16,1.4c-8.31.89-23.91,3.59-32.91,6.8-2.7,1-8.19,3.27-8.67,6s1.29,5.13,3.28,7.46c1.14,1.36,7.65,7.61,9.47,9.13,7.65,6.39,23.15,16.23,34.56,21,3.93,1.62,10.41,3.94,10.41,3.94s-.48-18.47-.39-36.67c.05-9.6.26-19.11.26-19.11m173.86,7.36c.55,5-.73,14.34-1,15.58a73.36,73.36,0,0,1-2.91,10.24,114.9,114.9,0,0,1-5.27,10.54,87.33,87.33,0,0,1-14.89,18.27C519.23,832.32,494,840.35,472.29,843a161.26,161.26,0,0,1-47.2-1.36c-5.36-1-13.35-2.82-13.35-2.82a54.22,54.22,0,0,1-.23,5.44,22.47,22.47,0,0,1-1.32,4.59,7.29,7.29,0,0,1-5.7,4.07c-3.27.6-6.73.81-9.75-.48-4.95-2.09-6.73-6.72-7.59-12.07-.7-4.27-1.43-11.71-1.43-11.71s-3.71-1.75-6.8-3.29a176.89,176.89,0,0,1-26.39-16.17c-2.19-1.63-11.57-9.49-13.64-11.45-5.81-5.51-11-11-15-18-3.09-5.5-4-10.38-1.63-16.21,3.25-8.12,14.89-14.24,22.86-17.73,5.85-2.58,24-8.52,31.6-9.62,3.57-.51,9.11-1.5,9.45-1.72a2.1,2.1,0,0,0,.34-.32c.17-.24.47-8.28.41-11.22S389,701,389.75,697c.37-2.17,2-10.54,3.7-12.73,1.1-1.48,3-1.36,4.62-.39,8.67,5.39,11.3,24.08,11.95,33.59.38,5.8.57,14.51.57,14.51s10-.29,16.06-.12a145.18,145.18,0,0,1,18.67,2.06c7.9,1.27,23.29,4.63,32.12,9.1,7.27,3.69,14.08,9.9,16.28,16.47,2,6,1.74,10.2-1.38,15.63-3.5,6.14-10.14,10.71-16.87,11.09-2,.11-9.54-.89-11.86-2.68a2.07,2.07,0,0,1-.2-2.89c.25-.3,3.77-2.18,5.85-3.27a14,14,0,0,0,2.72-1.92c1.72-1.52,3.28-3.19,3.11-5.16-.24-2.55-2.94-4.12-5.51-5.13-12.06-4.79-36.13-8.76-47.76-9.45-4.55-.27-11-.5-11-.5l1.37,64.24s5.35,1,9.57,1.7c2.42.37,12.68,1.29,15.41,1.36,20.76.55,43.93-1.31,63-10.3,8.36-3.93,16-8.84,21.84-15.47a44.88,44.88,0,0,0,10.6-33.34c-1.16-13.7-10.8-30-18.5-39.87-20.35-26.17-55.23-47.69-85.92-60.31-31.33-12.88-62.29-20.29-95.54-21.53-8.57-.31-27.26.12-36.7,2.73-1.35.38-2.71.84-4,1.12a11.13,11.13,0,0,0-3,1.24,4,4,0,0,0-.47.46s.58.32,1.13.56c1,.43,5.22.69,7.4,1.09,2,.37,4,1.39,4.78,2.82s.86,2.43-.05,3.57c-2.14,2.6-10.2,2.16-13.75,1.6s-8.27-1.72-9.12-4.93c-1-3.78.82-7.48,2.76-10.91,3.9-6.85,9.48-10.42,17.66-12.65a179.47,179.47,0,0,1,37.24-5.85c24.82-.94,48.32,3.4,72.37,10.7a347.19,347.19,0,0,1,45,17.5,355,355,0,0,1,32.76,18.44c2.64,1.75,18.11,13.11,20.51,15.11,5,4.09,11.56,10,16.31,14.69,9.18,9.1,20.6,23,26.15,34.12,1.34,2.65,2.37,5.26,4.09,8.33a72.19,72.19,0,0,1,3.55,9.17c.42,1.8,1,4.44,1.12,4.55.12,1,1.29,6.37,1.2,8.46m312-14.21c-11.62,2.68-42.19,4.17-42.19,4.17l-3.85,12.08s15.28-1.31,26.39-.15c0,0,3.6-.42,4,4.09a70.41,70.41,0,0,1-.36,8.71s-.23,2.73-4.09,3.42c-4.19.7-32.93,1.81-32.93,1.81L814,799.24s-1.73,3.64,2.15,2.6c3.6-1,33.71-6.61,37.63-5.8,4.2,1,8.85,6.65,7.51,11.75-1.61,6.33-31.66,25.5-50,24.16,0,0-9.61.62-17.74-12.36-7.57-12.37,2.87-35.78,2.87-35.78s-4.79-10.93-1.32-14.64c0,0,2.06-1.87,8.08-2.3l7.36-15.23s-8.39.57-13.38-5.6c-4.65-5.85-5-8.54-1.47-10.16,3.81-1.88,38.75-8.26,62.79-7.45,0,0,8.35-.82,15.6,13.67,0,0,3.51,5.86-2.46,7.27M781.19,808c-3.08,7.25-11.22,15-21.33,10.18S734,780.78,734,780.78s-6-12.13-7.19-11.82c0,0-1.31-2.37-2.11,10.89s.16,38.95-5.1,43c-5,4.06-11,2.44-14.17-2.3-2.84-4.68-4-15.79-2.48-35.31,1.83-19.55,6.37-40.36,12.18-46.84s10.45-1.76,12.26-.07c0,0,7.75,7,20.54,27.66l2.25,3.82S761.78,789.3,763,789.26c0,0,1,.89,1.8.25,1.22-.35.73-6.6.73-6.6s-2.41-21.24-13-57.2A16.91,16.91,0,0,1,752,717c1.07-4.24,5.33-2.25,5.33-2.25s16.43,8.26,24.4,35,2.6,50.88-.53,58.18m176.79-16c-7.47,13-28.58,40.37-56.64,33.92-9.26,22.47-17.05,45.19-21.5,79.2,0,0-1,6.61-6.47,4.31-5.44-1.9-14.4-11-16.22-23.47-1.95-16.45,5.37-44.24,20.34-76.12-4.37-7.09-7.34-17.23-4.8-31.66,0,0,3.76-26.8,30.68-51,0,0,3.22-2.79,5.1-1.93,2.06.87,1.1,9.59-.53,13.83s-13.69,25-13.69,25-7.47,14-5.37,25.07c14.12-21.71,46.21-65.47,66.1-51.67,6.68,4.78,9.76,15.18,9.76,26.38,0,9.84-2.37,20.3-6.76,28.14m-5.8-34.37s-1.11-8.63-9.54.88c-7.26,8-20.35,23-30.88,43.47,11-1.25,21.71-7.24,24.94-10.3,5.24-4.65,17.45-17.27,15.48-34m160.35-2h-51.42a402.92,402.92,0,0,0-6.45-52,3.82,3.82,0,0,0-3.75-3.13h-11.86a3.5,3.5,0,0,0-3.41,4.16,375.69,375.69,0,0,1,6.55,51H992.73a4.17,4.17,0,0,0-4.18,4.16v10.7a4.18,4.18,0,0,0,4.18,4.18h50.17c0,2.63.06,5,.06,7.21a375.26,375.26,0,0,1-2.22,42.43,3.9,3.9,0,0,0,3.86,4.3h11a4.15,4.15,0,0,0,4.14-3.75,395.23,395.23,0,0,0,2.14-43c0-2.21,0-4.58,0-7.21h50.71a4.19,4.19,0,0,0,4.18-4.19V759.78a4.19,4.19,0,0,0-4.18-4.17"
+                                transform="translate(-278.61 -438.04)" />
+                            <path id="path2" fill="#fff" class="cls-3"
+                                d="M898.8,949.78c17.18,0,31.61,6.37,40.74,19.74H940V953H962v117.56H940v-18.25h-.42c-8.28,14-23.14,21.22-39.9,21.22-34.37,0-62.38-25.89-62.38-59.84,0-37.56,27-63.88,61.54-63.88Zm-350.88,0c32.46,0,63,25.47,62.6,62.82-.43,32-27.77,62.05-66.51,60.86-32.85-1-60.77-29.23-60.39-62.09C484,975.92,512.12,949.78,547.92,949.78Zm177.83,0c19.53,0,35.44,13.59,36.08,34.38H739.76c-1.06-8.48-5.94-14.21-15.07-14.21-8.49,0-13.79,5.73-13.79,12.51,0,10,10.2,12.95,21.86,16.56,16.55,5.09,31.83,15.06,31.83,36.92,0,22.7-16.56,37.56-39.47,37.56-21.22,0-41.6-14.43-41.6-41.6H705.6c1.06,14.23,8.27,21.44,19.94,21.44,10.19,0,17-6.58,17-16.13,0-8.06-6.15-13.36-19.95-17.82-28.86-9.13-33.74-21.65-33.74-35,0-20.8,17.61-34.59,36.92-34.59ZM353.92,911.5A22.07,22.07,0,0,1,376,933.57v29.92h.43c7-10.4,18.25-15.7,32.89-15.7,28,0,49,17.82,49,50.08v70.66H436.26v-63.87c0-25.25-9.76-36.71-29.28-36.71-19.32,0-31,14-31,36.92v63.66H353.92Zm303.71,2V953H677v20.16H657.62v97.4a22.08,22.08,0,0,1-22.07-22.07V973.13h-9.11V953h9.11V913.5h22.08Zm153.3,0V953h19.32v20.16H810.94v97.4a22.07,22.07,0,0,1-22.07-22.07V973.13h-9.12V953h9.12V913.5h22.06Zm230.47,36.29v22.7c-19.1.64-28.86,12.3-28.86,32v43.92a22.07,22.07,0,0,1-22.07,22.07V953h20.59v10.6h.42c5.3-7.84,14.43-12.93,29.92-13.78ZM546.86,970c-25.31,0-46.72,24.55-39.89,51.91,4.64,18.55,21.55,32,40.67,31.47a41.69,41.69,0,0,0-.78-83.38Zm352.57,0c-23.3,0-42.1,21-39.94,45.9,1.79,20.5,18.54,37.07,39.1,37.48,23.32.47,41.8-18.82,41.8-41.37,0-22.92-16.56-42-41-42Z"
+                                transform="translate(-278.61 -438.04)" />
+                            <path class="cls-2" d="M429.64,602.33c128-202,479-233,608,60"
+                                transform="translate(-278.61 -438.04)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="homePage" data-page-state="visible">
+                <div class="page-nav">
+                    <div class="menu" tabindex="1" onclick="appPageManager.show(nav)">
+                        <div class="icon-container">
+                            <span class="material-icons">menu</span>
+                        </div>
+                    </div>
+                    <div class="page-title">
+                        <img src="https://i.ibb.co/2cTHX4L/disney-logo-2.png">
+                    </div>
+                    <div class="subscribe-btn" onclick="appPageManager.show(subscription)">Subscribe</div>
+                    <div style="flex: 1 ;"></div>
+                    <div class="disney-kids" onclick="appPageManager.show(Kids)">
+                        <img src="https://i.ibb.co/9VkV6nY/disney-kids.png">
+                    </div>
+                    <div class="search-btn" onclick="appPageManager.show(searchPage)">
+                        <div class="icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <title>zoom-2</title>
+                                <g fill="#D5D7D6">
+                                    <path fill="#D5D7D6"
+                                        d="M22.707,19.879l-4.37-4.37C19.386,13.928,20,12.035,20,10c0-5.514-4.486-10-10-10S0,4.486,0,10 s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l4.369,4.37c0.391,0.391,1.024,0.391,1.414,0l1.414-1.414 C23.097,20.902,23.098,20.269,22.707,19.879z M2,10c0-4.411,3.589-8,8-8s8,3.589,8,8s-3.589,8-8,8S2,14.411,2,10z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content">
+                    <div class="tab-layout" id="tabViewHome" data-active-tab="1">
+                        <div class="tab">
+
+                        </div>
+                        <div class="tab"></div>
+                        <div class="tab">
+                            <section>
+                                <div class="hotstar-vip" onclick="appPageManager.show(subscription)">
+                                    <img src="https://i.ibb.co/pLF89Ts/Disney-Hotstar-vip.png">
+                                </div>
+                            </section>
+                            <div class="image-slider">
+                                <div class="image">
+                                    <img src="https://i.ibb.co/M8qKpPP/movies-1.webp" alt="">
+                                </div>
+                                <div class="image">
+                                    <img src="https://i.ibb.co/k9RjR5X/movies-3.webp" alt="">
+                                </div>
+                                <div class="image">
+                                    <img src="https://i.ibb.co/m0KYtsw/movies-5.webp" alt="">
+                                </div>
+                                <div class="image">
+                                    <img src="https://i.ibb.co/kBbqbR6/movies-7.webp" alt="">
+                                </div>
+                                <div class="image">
+                                    <img src="https://i.ibb.co/w6C57HZ/movies-9.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="disney-products">
+                                <div class="img">
+                                    <img src="https://i.ibb.co/Wvb7Xbv/746347-h.webp">
+                                </div>
+                                <div class="img">
+                                    <img src="https://i.ibb.co/hMqm9SW/746348-h.webp">
+                                </div>
+                                <div class="img">
+                                    <img src="https://i.ibb.co/LvVh0yy/746349-h.webp">
+                                </div>
+                                <div class="img">
+                                    <img src="https://i.ibb.co/t2nnYbF/746355-h.webp">
+                                </div>
+                                <div class="img">
+                                    <img src="https://i.ibb.co/x7SrQ9Q/746357-h.webp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab"></div>
+                        <div class="tab"></div>
+                        <div class="tab"></div>
+                    </div>
+                </div>
+                <div class="bottom-nav" id="bottomNav" data-active-tab="1">
+                    <dib class="btn" tabindex="1" onclick="setTab('1')">
+                        <span class="material-icons">home</span>
+                        <span>Home</span>
+                    </dib>
+                    <dib class="btn" tabindex="1" onclick="setTab('2')">
+                        <span class="material-icons">tv</span>
+                        <span>TV</span>
+                    </dib>
+                    <dib class="btn img" tabindex="1" onclick="setTab('3')">
+                        <img src="https://i.ibb.co/j4ZnmYh/disney-plus.png">
+                    </dib>
+                    <dib class="btn" tabindex="1" onclick="setTab('4')">
+                        <span class="material-icons">sports_cricket</span>
+                        <span>Sports</span>
+                    </dib>
+                    <dib class="btn" tabindex="1" onclick="setTab('5')">
+                        <span class="material-icons">receipt_long</span>
+                        <span>News</span>
+                    </dib>
+                </div>
+            </div>
+
+            <div class="page" id="profilePage" data-page-state="hidden">
+                <div class="page-nav">
+                    <div class="btn" id="backBtn" onclick="appPageManager.hide(profilePage)">
+                        <div class="icon-container">
+                            <span class="material-icons">
+                                keyboard_backspace
+                            </span>
+                        </div>
+                    </div>
+                    <div class="page-title">
+                        My Account
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="profile">
+                        <div class="avatar-container">
+                            <div class="avatar">
+                                <span class="material-icons">
+                                    account_circle
+                                </span>
+                            </div>
+                            <div class="name">Username</div>
+                            <div class="number">+99 0123456789</div>
+                        </div>
+                    </div>
+                    <h4>Membership</h4>
+                    <div class="membership-card">
+                        Get more with Disney+ Hotstar Premium<br>
+                        <span>Only ₹299/month or ₹1499/year</span>
+                        <button class="membership-button" onclick="appPageManager.show(subscription)">
+                            Get Disney+ Hotstar Premium
+                        </button>
+                    </div>
+                    <h4>Account and security</h4>
+                    <div class="action-btns">
+                        <div class="btn">
+                            Log Out
+                        </div>
+                        <div class="btn">
+                            Log Out All Devices
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="downloadPage" data-page-state="hidden">
+                <div class="page-nav">
+                    <div class="btn" id="backBtn" onclick="appPageManager.hide(downloadPage)">
+                        <div class="icon-container">
+                            <span class="material-icons">
+                                keyboard_backspace
+                            </span>
+                        </div>
+                    </div>
+                    <div class="page-title">
+                        Downloads
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="icon-bg">
+                        <span class="material-icons">save_alt</span>
+                        <span class="text">Download videos and watch them offline</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="watchlist" data-page-state="hidden">
+                <div class="page-nav">
+                    <div class="btn" id="backBtn" onclick="appPageManager.hide(watchlist)">
+                        <div class="icon-container">
+                            <span class="material-icons">
+                                keyboard_backspace
+                            </span>
+                        </div>
+                    </div>
+                    <div class="page-title">
+                        Watchlist
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="icon-bg">
+                        <span class="material-icons">playlist_add</span>
+                        <span class="text">
+                            Keep track of Movies, TV shows and clips you want to watch
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="searchPage" data-page-state="hidden">
+                <div class="page-nav">
+                    <div class="back-btn" onclick="appPageManager.hide(searchPage);">
+                        <span class="material-icons">
+                            keyboard_backspace</span>
+                    </div>
+                    <input type="text" placeholder="Search">
+                    <div class="mic-btn">
+                        <span class="material-icons">mic</span>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <h4>Popular</h4>
+                    <div class="item">
+                        <div class="banner"></div>
+                        <div class="title">
+                            Koffee with Karan
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="banner"></div>
+                        <div class="title">
+                            Avengers
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="banner"></div>
+                        <div class="title">
+                            Star Wars
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="channels" data-page-state="hidden">
+                <div class="page-nav">
+                    <div class="btn" id="backBtn" onclick="appPageManager.hide(channels)">
+                        <div class="icon-container">
+                            <span class="material-icons">
+                                keyboard_backspace
+                            </span>
+                        </div>
+                    </div>
+                    <div class="page-title">
+                        Channels
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="grid-view">
+                        <img src="https://i.ibb.co/gFdbx5r/661097-h.webp" alt="661097-h" border="0">
+                        <img src="https://i.ibb.co/2MfCSWD/661098-h.webp" alt="661098-h" border="0">
+                        <img src="https://i.ibb.co/9q8X4Xw/661100-h.webp" alt="661100-h" border="0">
+                        <img src="https://i.ibb.co/xzf8NvH/661102-h.webp" alt="661102-h" border="0">
+                        <img src="https://i.ibb.co/1dSGGrp/661103-h.webp" alt="661103-h" border="0">
+                        <img src="https://i.ibb.co/s2zmKSx/661104-h.webp" alt="661104-h" border="0">
+                        <img src="https://i.ibb.co/ncs0G9H/661105-h.webp" alt="661105-h" border="0">
+                        <img src="https://i.ibb.co/f19bQG6/661106-h.webp" alt="661106-h" border="0">
+                        <img src="https://i.ibb.co/x2MgRsJ/661111-h.webp" alt="661111-h" border="0">
+                        <img src="https://i.ibb.co/2Y1vxkX/661116-h.webp" alt="661116-h" border="0">
+                        <img src="https://i.ibb.co/hmNczsb/661117-h.webp" alt="661117-h" border="0">
+                        <img src="https://i.ibb.co/09yS4wM/661119-h.webp" alt="661119-h" border="0">
+                        <img src="https://i.ibb.co/6RCLGT7/661121-h.webp" alt="661121-h" border="0">
+                        <img src="https://i.ibb.co/80nQN1C/661122-h.webp" alt="661122-h" border="0">
+                        <img src="https://i.ibb.co/FVVjC4q/661132-h.webp" alt="661132-h" border="0">
+                        <img src="https://i.ibb.co/nw7kbpd/661138-h.webp" alt="661138-h" border="0">
+                        <img src="https://i.ibb.co/SNL8ZQ9/661167-h.webp" alt="661167-h" border="0">
+                        <img src="https://i.ibb.co/2gtNdVv/661168-h.webp" alt="661168-h" border="0">
+                        <img src="https://i.ibb.co/qJP3zHh/661170-h.webp" alt="661170-h" border="0">
+                        <img src="https://i.ibb.co/R0QTc71/661171-h.webp" alt="661171-h" border="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="subscription" data-page-state="hidden">
+                <div class="page-nav">
+                    <div class="menu" tabindex="1" onclick="appPageManager.hide(subscription)">
+                        <div class="icon-container">
+                            <span class="material-icons">keyboard_backspace</span>
+                        </div>
+                    </div>
+                    <div class="page-title">
+                        <img src="https://i.ibb.co/2cTHX4L/disney-logo-2.png">
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="scrollAnimation">
+                        <img src="https://i.ibb.co/42pdXwJ/trays-large.jpg">
+                    </div>
+                    <h4>Subscribe to get more out of Hotstar</h4>
+
+                    <div class="two-cards">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="https://i.ibb.co/pLF89Ts/Disney-Hotstar-vip.png">
+                            </div>
+                            <ul>
+                                <li>Dream11 IPL & live sports</li>
+                                <li>7 Multiplex blockbusters</li>
+                                <li>Hotstar Specials</li>
+                                <li>Star serials before TV</li>
+                                <li>Disney+ movies (dubbed)</li>
+                            </ul>
+                            <div class="options">
+                                <label>
+                                    <input type="radio">
+                                    Annual ₹399
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="https://i.ibb.co/TRW0BWz/Disney-Hotstar-premium.png">
+                            </div>
+                            <ul>
+                                <li>All of VIP</li>
+                                <li>Disney+ Originals</li>
+                                <li>Disney+ movies in English</li>
+                                <li>American shoes & movies</li>
+                                <li>Ad free entertainment</li>
+                            </ul>
+                            <div class="options">
+                                <label>
+                                    <input type="radio">
+                                    Monthly ₹399
+                                </label>
+                                <label>
+                                    <input type="radio">
+                                    Annual ₹1499
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Chose the right plan for you</h4>
+                    <div class="table-view">
+                        <table>
+                            <tr>
+                                <td class="h">Content</td>
+                                <td>FREE</td>
+                                <td>
+                                    <div class="icon">
+                                        <img src="https://i.ibb.co/pLF89Ts/Disney-Hotstar-vip.png">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon">
+                                        <img src="https://i.ibb.co/TRW0BWz/Disney-Hotstar-premium.png">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dream11 IPL & live sports</td>
+                                <td>up to 5 min free</td>
+                                <td><span class="material-icons">check</span></td>
+                                <td><span class="material-icons">check</span></td>
+                            </tr>
+                            <tr>
+                                <td>Multiplex movies</td>
+                                <td><span class="material-icons">close</span></td>
+                                <td><span class="material-icons">check</span></td>
+                                <td><span class="material-icons">check</span></td>
+                            </tr>
+                            <tr>
+                                <td>Disney+ movies</td>
+                                <td><span class="material-icons">close</span></td>
+                                <td>Dubbed only</td>
+                                <td>Dubbed & English</td>
+                            </tr>
+                            <tr>
+                                <td>Kids shows & movies</td>
+                                <td><span class="material-icons">close</span></td>
+                                <td>Dubbed only</td>
+                                <td>Dubbed & English</td>
+                            </tr>
+                            <tr>
+                                <td>New Indian movies</td>
+                                <td>1 month delay</td>
+                                <td><span class="material-icons">check</span></td>
+                                <td><span class="material-icons">check</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hotstar specials</td>
+                                <td>First episode free</td>
+                                <td><span class="material-icons">check</span></td>
+                                <td><span class="material-icons">check</span></td>
+                            </tr>
+                            <tr>
+                                <td>American TV shows</td>
+                                <td><span class="material-icons">close</span></td>
+                                <td><span class="material-icons">close</span></td>
+                                <td><span class="material-icons">check</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hollywood movies</td>
+                                <td><span class="material-icons">close</span></td>
+                                <td>Dubbed only</td>
+                                <td>Dubbed & English</td>
+                            </tr>
+                            <tr>
+                                <td>Star serials before TV</td>
+                                <td>Next dat at 6am</td>
+                                <td>Before TV, at 6am</td>
+                                <td>Before TV, at 6am</td>
+                            </tr>
+                            <tr>
+                                <td class="h">Features</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Video quality</td>
+                                <td>SD (480p)</td>
+                                <td>HD (720p)</td>
+                                <td>FHD (1020p)</td>
+                            </tr>
+                            <tr>
+                                <td>Screens you can watch on at the time same time</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Ad free entertainment</td>
+                                <td><span class="material-icons">close</span></td>
+                                <td><span class="material-icons">close</span></td>
+                                <td><span class="material-icons">check</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="floating-btn">
+                    <div>
+                        <div class="icon">
+                            <img src="https://i.ibb.co/pLF89Ts/Disney-Hotstar-vip.png">
+                        </div>
+                        <div class="price">
+                            ₹399 / year
+                        </div>
+                    </div>
+                    <div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="nav" data-page-state="hidden">
+                <div class="profile" onclick="appPageManager.hide(nav);appPageManager.show(profilePage)">
+                    <div class="name">
+                        Username
+                    </div>
+                    <div class="number">
+                        +99 0123456789
+                    </div>
+                </div>
+                <div class="kid-safe">
+                    <img src="https://i.ibb.co/9VkV6nY/disney-kids.png" alt="">
+                    <span style="color:#FFAA05; font-weight: 600 ; margin-left: 0.5rem ;">Safe</span>
+                    <div style="flex:1;"></div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="slider"></div>
+                    </label>
+                </div>
+                <div class="nav-item" onclick="appPageManager.hide(nav);appPageManager.show(downloadPage)">
+                    <div class="icon">
+                        <span class="material-icons">save_alt</span>
+                    </div>
+                    <div class="name">
+                        Downloads
+                        <span>Watch videos offline</span>
+                    </div>
+                </div>
+                <div class="nav-item" onclick="appPageManager.hide(nav);appPageManager.show(watchlist)">
+                    <div class="icon">
+                        <span class="material-icons">playlist_add</span>
+                    </div>
+                    <div class="name">
+                        Watchlist
+                        <span>Save to watch later</span>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="icon">
+                        <span class="material-icons">
+                            redeem
+                        </span>
+                    </div>
+                    <div class="name">
+                        Prizes
+                        <span>Prizes you have won</span>
+                    </div>
+                </div>
+                <div class="nav-item" onclick="appPageManager.hide(nav);appPageManager.show(Movies)">
+                    <div class="icon">
+                        <span class="material-icons">
+                            movie
+                        </span>
+                    </div>
+                    <div class="name">Movies</div>
+                </div>
+                <div class="nav-item" onclick="appPageManager.hide(nav);appPageManager.show(Premium)">
+                    <div class="icon">
+                        <span class="material-icons">
+                            stars
+                        </span>
+                    </div>
+                    <div class="name">Premium</div>
+                </div>
+                <div class="nav-item" onclick="appPageManager.hide(nav);appPageManager.show(Trending)">
+                    <div class="icon">
+                        <span class="material-icons">
+                            offline_bolt
+                        </span>
+                    </div>
+                    <div class="name">Trending</div>
+                </div>
+                <div class="nav-item" onclick="appPageManager.hide(nav);appPageManager.show(channels)">
+                    <div class="icon">
+                        <span class="material-icons">
+                            folder_special
+                        </span>
+                    </div>
+                    <div class="name">Channels</div>
+                </div>
+                <div class="nav-item">
+                    <div class="icon">
+                        <span class="material-icons">
+                            translate
+                        </span>
+                    </div>
+                    <div class="name">Language</div>
+                </div>
+                <div class="nav-item">
+                    <div class="icon">
+                        <span class="material-icons">
+                            album
+                        </span>
+                    </div>
+                    <div class="name">Genres</div>
+                </div>
+                <hr>
+                <div class="nav-item">
+                    <div class="icon">
+                        <span class="material-icons">
+                            help_outline
+                        </span>
+                    </div>
+                    <div class="name">Help</div>
+                </div>
+                <hr>
+                <div class="privacy">
+                    Privacy Policy • T&C<br>
+                    <span>v192.168.1.1</span>
+                </div>
+            </div>
+            <div class="overlay" onclick="appPageManager.hide(nav);"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style >
+    
+
+* {
+    padding: 0 ;
+    margin : 0 ;
+    box-sizing: border-box ;
+    outline: none ;
+    -webkit-tap-highlight-color: #00000000 ;
+    user-select: none ;
+}
+
+:root {
+    font-size: 16px ;
+}
+
+body {
+    font-size : 16px ;
+    font-family: sans-serif ;
+    max-width: 100% ;
+}
+
+body[data-theme = "light-theme"] {
+    --background : #F5F5F5 ;
+}
+
+body[data-theme = "dark-theme"] {
+    --background : #212131 ;
+}
+
+.wrapper {
+    position: absolute ;
+    top  : 0 ;
+    left : 0 ;
+    width : 100vw ;
+    height: 100vh ;
+
+    overflow: hidden ;
+}
+
+.test {
+    background-color: cyan ;
+    border: 2px solid magenta ;
+}
+
+button {
+    font-size: 14px ;
+    font-weight: 500 ;
+    letter-spacing: 2px ;
+    padding: 0.5rem 1rem ;
+    border-radius: 4px ;
+    border: 0 ;
+    box-shadow: 0 2px 6px rgba(0,0,0,.25) , 0 4px 12px rgba(0,0,0,.1);
+    cursor: pointer ;
+}
+
+button:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,.15) , 0 4px 12px rgba(0,0,0,.2);
+}
+
+/*********************/
+
+#loadingPage {
+    z-index: 99 ;
+    background: linear-gradient(#09092d,#193370);
+}
+
+#loadingPage[data-page-state="hide"] {
+    animation: hide-loading-page 300ms ease-out forwards ;
+}
+
+#loadingPage .page-content {
+    width: 100% ;
+    height: 100% ;
+    background-color: transparent ;
+    animation: 0 ;
+}
+
+@keyframes hide-loading-page {
+    to {
+        opacity: 0 ;
+    }
+}
+
+#loadingPage .logo {
+    position: absolute ;
+    top : 50% ;
+    left: 50% ;
+    width : 12rem ;
+    height: 12rem ;
+    transform: translate(-50%,-50%);
+    animation: fadein 1s 0.1s ease-out forwards;
+    opacity: 1 ;
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}
+
+
+#homePage {
+    background-color: #101211 ;
+    z-index: 0 ;
+}
+
+#homePage .page-nav .menu ,
+#homePage .page-nav .search-btn{
+    width: var(--nav-height) ;
+    height: var(--nav-height) ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+#homePage .page-nav .icon-container {
+    position: relative ;
+    width : 50% ;
+    height: 50% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    color: #ddd ;
+}
+
+#homePage .page-nav .page-title img {
+    height: 2rem ;
+    margin-bottom: 0.5rem ;
+    display: block ;
+}
+
+#homePage .page-nav .disney-kids {
+    background-color: #20242A ;
+    padding: 0.5rem ;
+    border-radius: 8px ;
+    height: 2rem ;
+}
+
+
+#homePage .page-nav .disney-kids img {
+    display: block ;
+    height: 100% ;
+    transform: scale(0.8);
+}
+
+#homePage .page-nav .subscribe-btn {
+    position: relative ;
+    margin-left: 1rem ;
+    color: #0353c2 ;
+    font-size: 0.6rem ;
+    text-transform: uppercase ;
+    border: 2px solid #0353c2;
+    padding: 0.2rem 0.5rem ;
+    padding-right: 1rem ;
+    border-radius: 4px ;
+}
+
+#homePage .page-nav .subscribe-btn::before {
+    position: absolute ;
+    right: 0.5rem ;
+    top: 50% ;
+    width : 0.25rem ;
+    height: 0.25rem ;
+    content: "" ;
+    border-right: 2px solid #0353c2 ;
+    border-bottom: 2px solid #0353c2 ;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+#homePage .page-content {
+    height: calc(100% - 8rem);
+}
+
+#homePage .bottom-nav {
+    position: absolute ;
+    bottom : 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 4rem ;
+    background-color: #101211 ;
+    display: flex ;
+    z-index: 99 ;
+}
+
+#homePage .bottom-nav .btn {
+    position: relative ;
+    flex: 1 ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column ;
+    color: #888 ;
+    transition: .2s ;
+    overflow: hidden;
+}
+
+#homePage .bottom-nav .btn:focus::before ,
+#homePage .page-nav .menu:focus::before{
+    position: absolute ;
+    content: "" ;
+    top : 50% ;
+    left: 50% ;
+    border-radius: 50% ;
+    width: 5rem ;
+    height: 5rem ;
+    background-color: hsla(216, 14%, 60%,35%)  ;
+    animation: swell .3s forwards;
+    transform: translate(-50%,-50%);
+    z-index: -1 ;
+}
+
+@keyframes swell {
+    0% {
+        opacity: 0 ;
+        transform: translate(-50%,-50%) scale(0);
+    } 
+    50% {
+        opacity: 1 ;
+        transform: translate(-50%,-50%) scale(0.8);
+    } 
+    100%{
+        opacity: 0 ;
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+#homePage .bottom-nav .btn span:last-child {
+    font-size: 0.6rem ;
+    margin-top: 0.25rem ;
+}
+
+#homePage .bottom-nav .img img {
+    height: 2rem ;
+}
+
+#tabViewHome {
+    position: relative ;
+    width : 100% ;
+    height: 100% ;
+    overflow: hidden ;
+}
+
+#tabViewHome .tab {
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 100% ;
+    overflow: auto ;
+    opacity: 0 ;
+    pointer-events: none ;
+    transition: all .3s ;
+    transform: translateY(20rem);
+}
+
+#tabViewHome[data-active-tab="1"] .tab:nth-child(1),
+#tabViewHome[data-active-tab="2"] .tab:nth-child(2),
+#tabViewHome[data-active-tab="3"] .tab:nth-child(3),
+#tabViewHome[data-active-tab="4"] .tab:nth-child(4),
+#tabViewHome[data-active-tab="5"] .tab:nth-child(5){
+    opacity: 1 ;
+    pointer-events: all ;
+    transform: translateY(0rem);
+}
+
+#homePage .bottom-nav[data-active-tab="1"] .btn:nth-child(1),
+#homePage .bottom-nav[data-active-tab="2"] .btn:nth-child(2),
+#homePage .bottom-nav[data-active-tab="3"] .btn:nth-child(3),
+#homePage .bottom-nav[data-active-tab="4"] .btn:nth-child(4),
+#homePage .bottom-nav[data-active-tab="5"] .btn:nth-child(5) {
+    color: #ddd ;
+}
+
+#homePage .bottom-nav[data-active-tab="3"] .img img {
+    filter: grayscale(0);
+}
+
+#homePage .bottom-nav .img img {
+    filter: grayscale(1) brightness(0.5);
+}
+
+.disney-products {
+    width : 100% ;
+    height: 4rem ;
+    display: flex ;
+    justify-content: space-around ;
+    overflow: auto ;
+}
+
+.disney-products .img {
+    flex: 1 ;
+    width: 4rem ;
+    height: 4rem ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.disney-products .img img {
+    width: 80%;
+}
+
+.page h4 {
+    margin-top: 1rem ;
+    line-height: 2rem ;
+    color: #ddd ;
+    padding-left: 1rem ;
+    font-weight: 500 ;
+}
+
+.page section {
+    padding: 1rem ;
+}
+
+.page .hotstar-vip {
+    width: 100% ;
+    height: 4rem ;
+    border-radius: 4px ;
+
+
+    background: linear-gradient(to left,hsl(348, 100%, 25%),hsl(348, 100%, 40%));
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.page .hotstar-vip img {
+    height: 2.5rem ;
+    display: block ;
+}
+
+.grid-view {
+    width : 100% ;
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem ;
+    padding: 1rem ;
+}
+
+.grid-view img {
+    width: 100% ;
+}
+
+.page-layout {
+    position: absolute ;
+    top : 0 ;
+    left: 0 ;
+}
+
+.page-layout .page {
+    position: absolute ;
+    width : 100vw ;
+    height: 100vh ;
+    background-color: #121413 ;
+}
+
+.page-layout .page[data-page-state="hide"] {
+    animation: hide-page 300ms ease-out forwards ;
+}
+
+.page-layout .page[data-page-state="hidden"] {
+    opacity: 0 ;
+    pointer-events: none ;
+}
+
+.page-layout .page[data-page-state="show"] {
+    animation: show-page 300ms ease-out forwards ;
+}
+
+.page-layout .page[data-page-state="visible"] {
+    opacity: 1 ;
+    pointer-events: all ;
+}
+
+.page-layout .page .page-nav {
+    --nav-height : 4rem ;
+    position: relative ;
+    width: 100% ;
+    height: var(--nav-height) ;
+    background-color: #121413 ;
+    display: flex ;
+    align-items: center ;
+}
+
+.page-layout .page .page-nav .btn {
+    width: var(--nav-height) ;
+    height: var(--nav-height) ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    color: #ddd ;
+}
+
+.page-layout .page .page-nav .page-title {
+    color: #ddd ;
+}
+
+.page-layout .page .page-content {
+    position: relative ;
+    width : 100% ;
+    height: calc(100% - 4rem);
+    overflow: auto ;
+    background-color: #121413 ;
+    animation: slide-up 300ms ease-out ;
+}
+
+@keyframes slide-up {
+    from{
+        opacity: 0 ;
+        transform : translateY(20rem) ;
+    }
+    to {
+        opacity: 1 ;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide-page {
+    to {
+        transform: translateY(100vw) ;
+        opacity: 0 ;
+    }
+}
+
+@keyframes show-page {
+    from {
+        transform: translateY(100vw);
+        opacity: 0 ;
+    }
+    to {
+        transform: translateY(0vw) ;
+        opacity: 1 ;
+    }
+}
+
+.page-layout .page .page-content .icon-bg {
+    width : 100% ;
+    height: 100% ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column ;
+}
+
+.page-layout .page .page-content .icon-bg::before {
+    position: absolute ;
+    content: "" ;
+    margin-bottom: 4rem ;
+    width : 8rem ;
+    height: 8rem ;
+    border-radius: 8rem 6rem 10rem 6rem ;
+    background-color: hsl(150, 5%, 10%) ;
+
+}
+
+.page-layout .page .page-content .icon-bg span {
+    font-size: 6rem ;
+    color: hsl(210, 7%, 24%) ;
+    z-index: 1 ;
+}
+
+.page-layout .page .page-content .icon-bg .text {
+    font-size: 0.8rem ;
+    margin-top: 2rem ;
+    color: #888 ;
+    font-weight: 700 ;
+    width: 30ch;
+    text-align: center ;
+}
+
+
+.ad-block {
+    width: 100% ;
+    padding: 1rem ;
+    background-color: #1C1D1E ;
+}
+
+.ad-block .banner {
+    margin-bottom: 1rem ;
+    overflow: hidden ;
+}
+
+.ad-block .banner img {
+    width: 100% ;
+    display: block ;
+    border-radius: 8px ;
+}
+
+.ad-block .detail-row {
+    height: 3rem ;
+    display: flex ;
+    align-items: center ;
+}
+
+.ad-block .detail-row .icon {
+    width : 3rem ;
+    height: 3rem ;
+    flex: 0 0 3rem ;
+    background-color: #444 ;
+    border-radius: 4px ;
+    margin-right: 1rem ;
+    overflow: hidden ;
+}
+
+.ad-block .detail-row .icon img {
+    display: block ;
+    width: 100% ;
+    border-radius: 4px ;
+}
+
+.ad-block .detail-row .play-now-btn {
+    position: relative ;
+    margin-left: 1rem ;
+    color: #0353c2 ;
+    font-size: 0.8rem ;
+    text-transform: uppercase ;
+    border: 2px solid #0353c2;
+    padding: 0.5rem 1rem ;
+    padding-right: 1rem ;
+    border-radius: 4px ;
+}
+
+.ad-block .detail-row .name {
+    color: #ddd ;
+}
+
+.ad-block .detail-row .name .row1 {
+    display: flex ;
+    align-items: center ;
+}
+
+.ad-block .detail-row .name .row1::before {
+    content: "AD" ;
+    font-size: 0.6rem ;
+    background-color: #E2C228 ;
+    color: #1C1D1E ;
+    padding: 0.2rem 0.3rem ;
+    border-radius: 4px ;
+    margin-right: 0.5rem ;
+}
+
+.ad-block .detail-row .name .row2 {
+    color: #888 ;
+    margin-top: 0.25rem ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-slider {
+    position: relative ;
+    width : 100% ;
+    white-space: nowrap ;
+    overflow: auto ;
+    padding: 0.5rem ;
+    scroll-snap-type: x mandatory;
+}
+
+.image-slider .image {
+    display: inline-block ;
+    width : calc(100% - 4rem) ;
+    margin: 0.5rem ;
+    height: 15rem ;
+    border-radius: 8px ;
+    scroll-snap-align : center ;
+    scroll-snap-stop: normal;
+    overflow: hidden ;
+}
+
+.image-slider .image img {
+    width: 100% ;
+}
+
+.mini .image {
+    width : 45% ;
+    height: auto ;
+}
+
+.micro .image {
+    width : 25% ;
+    height: auto ;
+}
+
+
+#nav {
+    height: 100vh ;
+    width : 80vw ;
+    background-color:#101211;
+    z-index:99 ;
+}
+
+#nav .profile {
+    position: relative ;
+    width: 100% ;
+    padding: 1.5rem ;
+}
+
+#nav .profile:hover {
+    background-color: #333 ;
+}
+
+#nav .profile::before {
+    position: absolute ;
+    right: 2rem ;
+    top: 50% ;
+    width : 0.5rem ;
+    height: 0.5rem ;
+    content: "" ;
+    border-right: 2px solid #888 ;
+    border-bottom: 2px solid #888 ;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+#nav .profile .name {
+    color: #ffffff ;
+}
+
+#nav .profile .number {
+    color: #888 ;
+    font-size: 0.8rem;
+    line-height: 1rem ;
+}
+
+#nav .kid-safe {
+    width: 100% ;
+    padding: 1.5rem ;
+    background-color: #1B1F20 ;
+
+    display: flex ;
+    align-items: center ;
+}
+
+#nav .kid-safe img {
+    display: block ;
+}
+
+#nav .switch {
+    position: relative ;
+    display: block ;
+    width : 1.5rem ;
+    height: 1rem ;
+}
+
+#nav .switch input { 
+    opacity: 0;
+    width : 0;
+    height: 0;
+}
+
+#nav .switch .slider {
+    position: absolute ;
+    top: 0.25rem ;
+    left: 0 ;
+    cursor: pointer;
+    width : 1.5rem ;
+    height: 0.5rem ;
+    border-radius: 0.25rem ;
+    background-color: #ccc;
+    transition: .4s ;
+}
+
+#nav .switch .slider:before {
+    position: absolute;
+    top : 50% ;
+    left: 0 ;
+    content: "";
+    height: 1rem;
+    width : 1rem ;
+    border-radius: 50% ;
+    background-color: white;
+    transition: .4s;
+    transform: translateY(-50%);
+}
+
+#nav .switch input:checked + .slider {
+    background-color: #FFAA05;
+}
+
+#nav hr {
+    border: 0 ;
+    height: 1px ;
+    background-color: hsl(150, 6%, 12%);
+}
+
+#nav .switch input:checked + .slider:before {
+    transform: translate(0.5rem,-50%);
+}
+
+#nav .nav-item {
+    width : 100% ;
+    height: 3rem ;
+    display: flex ;
+}
+
+#nav .nav-item:hover {
+    background-color: hsl(192, 8%, 8%) ;
+}
+
+#nav .nav-item .icon {
+    width : 3rem ;
+    height: 3rem ;
+    flex: 0 0 3rem ;
+
+    color: #fff ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+#nav .nav-item .name {
+    display: flex ;
+    justify-content: center ;
+    flex-direction: column ;
+    color: #fff ;
+}
+
+#nav .nav-item .name span {
+    font-size: 0.8rem;
+    color: #888 ;
+}
+
+#nav .privacy {
+    padding: 1rem ;
+    color: hsl(192, 8%, 32%) ;
+    font-size: 0.8rem ;
+}
+
+#nav .privacy span {
+    font-size: 0.6rem ;
+}
+
+#nav[data-page-state="hide"] {
+    animation: hide-nav 300ms ease-out forwards ;
+}
+
+#nav[data-page-state="hidden"] {
+    opacity: 0 ;
+    pointer-events: none ;
+}
+
+#nav[data-page-state="show"] {
+    animation: show-nav 300ms ease-out forwards ;
+}
+
+#nav[data-page-state="visible"] {
+    opacity: 1 ;
+    pointer-events: all ;
+}
+
+#nav + .overlay {
+    position: fixed ;
+    top : 0 ;
+    left: 0 ;
+    z-index: 98 ;
+    width: 100vw ;
+    height: 100vh ;
+    background-color: black ;
+    opacity: 0 ;
+    transition: all 0.2s ease-out;
+    pointer-events: none ;
+}
+
+
+#nav[data-page-state="visible"] + .overlay {
+    opacity: 0.5 ;
+    pointer-events: all ;
+}
+
+@keyframes hide-nav {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(-100vw) ;
+    }
+}
+
+@keyframes show-nav {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0vw) ;
+    }
+}
+
+#profilePage .page-content .profile {
+    width: 100% ;
+    padding: 3rem 0 ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column ;
+}
+
+#profilePage .page-content .profile .avatar-container {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column ;
+    color: #ddd ;
+}
+
+#profilePage .page-content .profile .avatar-container .avatar span {
+    font-size: 6rem ;
+    color: hsl(240, 20%, 16%) ;
+
+}
+
+#profilePage .page-content .profile .avatar-container .name {
+    font-size: 1.2rem ;
+}
+
+#profilePage .page-content .profile .avatar-container .number {
+    font-size: 0.8rem ;
+    color: #888 ;
+    margin-top: 0.5rem ;
+}
+
+#profilePage .page-content h4 {
+    padding-left: 1rem ;
+    text-transform: uppercase ;
+    font-size: 0.8rem ;
+    color: #888 ;
+}
+
+#profilePage .page-content .membership-card {
+    width : calc(100% - 2rem) ;
+    margin: 1rem ;
+    background-color: hsl(150, 8%, 12%)  ;
+    color: #ddd ;
+    padding: 1rem ;
+    border-radius: 4px ;
+}
+
+#profilePage .page-content .membership-card span {
+    font-size: 0.8rem ;
+    margin: 0.8rem 0 ;
+    display: block ;
+}
+
+#profilePage .page-content .membership-card button {
+    width: 100% ;
+    background-color: #1F80DF ;
+    color: #fff ;
+    padding: 0.8rem ;
+    text-transform: uppercase ;
+    font-size: 0.9rem ;
+    letter-spacing: 0px ;
+    transition: .2s ;
+}
+
+#profilePage .page-content .membership-card button:hover {
+    background-color: hsl(210, 76%, 60%) ;
+}
+
+#profilePage .page-content .action-btns {
+    width : calc(100% - 2rem) ;
+    margin: 1rem ;
+    background-color: hsl(150, 8%, 12%)  ;
+    color: #ddd ;
+    padding: 0 1.5rem ;
+    border-radius: 4px ;
+}
+
+#profilePage .page-content .action-btns .btn {
+    width : 100% ;
+    height: 4rem ;
+    line-height: 4rem ;
+    font-size: 0.8rem ;
+}
+
+#profilePage .page-content .action-btns .btn + .btn {
+    border-top: 1px solid hsl(150, 8%, 18%)  ;
+}
+
+#searchPage .page-nav {
+    padding: 0.5rem ;
+}
+
+#searchPage .page-nav input {
+    height: 100% ;
+    width : 100% ;
+    padding-left: 3rem ;
+    border: 0 ;
+    background-color: hsl(150, 6%, 12%) ;
+    color: #ddd ;
+}
+
+#searchPage .page-nav .back-btn ,
+#searchPage .page-nav .mic-btn {
+    position: absolute ;
+    left: 0 ;
+    top : 0 ;
+    width : 4rem ;
+    height: 4rem ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    color: #ddd ;
+}
+
+#searchPage .page-nav .mic-btn {
+    right: 0 ;
+    left: auto ;
+}
+
+#searchPage .page-content h4 {
+    padding-left: 1rem ;
+    text-transform: uppercase ;
+    font-size: 0.6rem ;
+    color: #888 ;
+    margin-top: 1rem ;
+    margin-bottom: 0.8rem ;
+}
+
+#searchPage .page-content .item {
+    width : 100% ;
+    height: 4rem ;
+    display: flex ;
+    align-items: center ;
+    color: #888 ;
+    font-size: 0.8rem ;
+    padding: 1rem ;
+}
+
+#searchPage .page-content .item .banner {
+    position: relative ;
+    width : 3rem ;
+    height: 4rem ;
+}
+
+#searchPage .page-content .item .banner::before {
+    position: absolute ;
+    top : 10% ;
+    width : 80% ;
+    height: 80% ;
+    content: "" ;
+    border-radius: 4px ;
+    background-color: hsl(150, 6%, 12%) ;
+}
+
+
+#searchPage .page-content .item .title {
+    flex: 1 ;
+    height: 100% ;
+}
+
+#subscription {
+    background-color: #101211 ;
+    z-index: 0 ;
+}
+
+#subscription .page-nav .menu {
+    width: var(--nav-height) ;
+    height: var(--nav-height) ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+#subscription .page-nav .icon-container {
+    position: relative ;
+    width : 50% ;
+    height: 50% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    color: #ddd ;
+}
+
+#subscription .page-nav .page-title img {
+    height: 2rem ;
+    margin-bottom: 0.5rem ;
+    display: block ;
+}
+
+#subscription .scrollAnimation {
+    overflow: hidden ;
+}
+
+#subscription .scrollAnimation img {
+    position: relative ;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100vw);
+    } to {
+        transform: translateX(-100%);
+    }
+}
+
+#subscription h4 {
+    text-align: center ;
+}
+
+#subscription .two-cards {
+    position: relative ;
+    width: 100% ;
+    display: flex ;
+    padding: 1rem ;
+}
+
+
+#subscription .two-cards .card {
+    position: relative ;
+    flex: 1 ;
+    color: #ddd ;
+    padding: 1rem ;
+    border-radius: 8px ;
+    background-color: hsl(150, 6%, 12%);
+}
+
+#subscription .two-cards .card + .card {
+    margin-left: 1rem ;
+}
+
+#subscription .two-cards .card .icon {
+    width : 100% ;
+    height: 10rem ;
+    display: flex ;
+    align-items: center;
+    justify-content: center ;
+}
+
+#subscription .two-cards .card .icon img {
+    width: 5rem ;
+}
+
+#subscription .two-cards .card ul {
+    margin-left: 1rem ;
+    font-size: 0.8rem ;
+}
+
+#subscription .two-cards .card .options {
+    width: 100% ;
+    padding: 1rem ;
+    margin-top: 1rem ;
+    background-color: hsl(170, 6%, 18%);
+    border-radius: 8px ;
+}
+
+#subscription .two-cards .card .options label {
+    display: flex ;
+    height: 2rem ;
+    align-items: center ;
+}
+
+#subscription .two-cards .card .options label input {
+    margin-right: 1rem ;
+}
+
+
+#subscription .table-view {
+    width: 100% ;
+    position: relative ;
+    margin-bottom: 15rem ;
+    margin-top: 2rem ;
+}
+
+#subscription .table-view table {
+    width: 100% ;
+    color: #ddd ;
+    font-size: 0.8rem ;
+    border-collapse: collapse ;
+}
+
+#subscription .table-view table .icon img {
+    width: 3rem ;
+}
+
+#subscription .table-view table tr:first-child td {
+    border-top: 0 ;
+}
+
+#subscription .table-view table td {
+    border: 1px solid hsl(150, 6%, 16%);
+    text-align: center ;
+    padding: 0.6rem 0.25rem;
+}
+
+#subscription .table-view table tr td:first-child {
+    text-align: left ;
+    padding-left: 1rem ;
+}
+
+#subscription .table-view table .h {
+    text-align: left ;
+    vertical-align: bottom ;
+    text-transform: uppercase ;
+    color: #888 ;
+    padding-bottom: 0.5rem ;
+    padding-left: 1rem ;
+}
+
+#subscription .floating-btn {
+    position: absolute ;
+    z-index: 1 ;
+    width: calc(100% - 2rem);
+    margin: 1rem ;
+    bottom: 0 ;
+    left: 0 ;
+    height: 4rem ;
+    background-color: hsl(170, 7%, 12%) ;
+    border-radius: 8px  ;
+    display: flex ;
+}
+
+#subscription .floating-btn > div {
+    flex: 1 ;
+    padding: 1rem ;
+}
+
+#subscription .floating-btn > div:first-child {
+    display: flex ;
+    align-items: center ;
+    padding-left: 2rem ;
+    color: #ddd ;
+    justify-content: space-around ;
+}
+#subscription .floating-btn .icon {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+#subscription .floating-btn .icon img {
+    width: 2rem ;
+}
+
+
+#subscription .floating-btn button {
+    width: 100% ;
+    background-color: #0353c2 ;
+    color: #fff ;
+}
+</style>
+<script>
+    
+window.onload = () => {
+    setTimeout(()=>{
+        appPageManager.hide(loadingPage);
+    },6000)
+
+    let tabs = document.querySelectorAll("#homePage .tab") ;
+    tabs[0].innerHTML = appLayoutGenerators.generateLayout(["kids","shows","movies","movies","sports"]);
+    tabs[1].innerHTML = appLayoutGenerators.generateLayout(["movies","shows","shows","news","sports"]);
+    tabs[2].innerHTML += appLayoutGenerators.generateLayout(["movies","shows","shows","news","sports"]);
+    tabs[3].innerHTML = appLayoutGenerators.generateLayout(["sports"]);
+    tabs[4].innerHTML = appLayoutGenerators.generateLayout(["news"]);
+
+    appLayoutGenerators.generatePage("Movies","Movies");
+    appLayoutGenerators.generatePage("Trending","Trending");
+    appLayoutGenerators.generatePage("Premium","Premium");
+    appLayoutGenerators.generatePage("Language","Language");
+    appLayoutGenerators.generatePage("Kids","Kids Show");
+
+    Movies.querySelector(".page-content").innerHTML = 
+    Trending.querySelector(".page-content").innerHTML =
+    appLayoutGenerators.generateLayout(["movies"]);
+
+    Premium.querySelector(".page-content").innerHTML = 
+    appLayoutGenerators.generateLayout(["movies","shows","sports"]) ;
+
+    Kids.querySelector(".page-content").innerHTML = 
+    appLayoutGenerators.generateLayout(["kids"]) ;
+};
+
+function setTab(index) {
+    tabViewHome.setAttribute("data-active-tab",index) ;
+    bottomNav.setAttribute("data-active-tab",index);
+}
+
+let appLayoutGenerators = (function(){
+
+    function generatePage(id,title) {
+        let template = `
+            <div class="page" id="${id}" data-page-state="hidden">
+                <div class="page-nav">
+                    <div class="btn" onclick="appPageManager.hide(${id})">
+                        <div class="icon-container">
+                            <span class="material-icons">
+                                keyboard_backspace
+                            </span>
+                        </div>
+                    </div>
+                    <div class="page-title">
+                        ${title}
+                    </div>
+                </div>
+                <div class="page-content">
+                    
+                </div>
+            </div>
+        `;
+
+        appMainPageLayout.innerHTML += template ;
+
+        return template ;
+    }
+
+    function generateAd(){
+        return ( `
+        <div class="ad-block">
+            <div class="banner">
+                <img src="https://i.ibb.co/0hrTzYL/dream11.jpg">
+            </div>
+            <div class="detail-row">
+                <div class="icon">
+                    <img src="https://i.ibb.co/Gnb9Q9j/dream11-icon.jpg" alt="">
+                </div>
+                <div class="name">
+                    <div class="row1">Dream11</div>
+                    <div class="row2">Join 9 Crore+ users</div>
+                </div>
+                <div style="flex:1;"></div>
+                <div class="play-now-btn">
+                    Play now
+                </div>
+            </div>
+        </div>
+        `) ;
+    }
+
+
+    function generateImageSlider(type,sliderType){
+        let headings = [
+            `Latest ${type}`,
+            `Most Viewed ${type}`,
+            `Popular ${type}`,
+            `Top ${type}`,
+            `New to Disney+`,
+            `Upcoming`,
+            `Hit ${type}`,
+            `Don't miss this`,
+            `Disney+ VIP`,
+            `Recently Released`,
+            `New Episodes`
+        ] ;
+        return (
+        `<h4>${getRandom(headings)}</h4>
+        <div class="image-slider ${sliderType}">
+            ${database.getImages(type,Math.floor(Math.random()*5 + 5)).map(
+                url => `<div class="image"><img src="${url}"/></div>`).join("")}
+        </div>
+        `);
+    }
+
+
+
+    // return Interface
+    return {
+        generatePage : function(id,title){
+            return generatePage(id,title);
+        } ,
+        generateLayout : function(types) {
+            let output = generateAd() ;
+            let sliderTypes = ["mini","micro","big"] ;
+
+            for(var i=0;i<10;i++) {
+                output += generateImageSlider(getRandom(types),getRandom(sliderTypes)) ;
+                if(Math.random()>0.8){
+                    output += generateAd();
+                }
+                
+            }
+
+            return output ;
+        }
+    };
+
+})();
+
+function getRandom(arr) {
+    return arr[Math.floor(Math.random()*arr.length)] ;
+}
+
+
+let appPageManager = (function(){
+
+    let pageStack = [] ;
+
+    function hidePage(pageElement){
+        pageElement.setAttribute("data-page-state","hide") ;
+
+        let animationEndEventHandler = (event) => {
+            event.target.setAttribute("data-page-state","hidden") ;
+            event.target.removeEventListener("webkitAnimationEnd",animationEndEventHandler);
+        };
+        pageElement.addEventListener("webkitAnimationEnd",animationEndEventHandler);
+    }
+
+    function showPage(pageElement){
+        pageElement.setAttribute("data-page-state","show");
+
+        let animationEndEventHandler = (event) => {
+            event.target.setAttribute("data-page-state","visible") ;
+            event.target.removeEventListener("webkitAnimationEnd",animationEndEventHandler);
+        };
+        pageElement.addEventListener("webkitAnimationEnd",animationEndEventHandler);
+    }
+
+    function addPage(pageElement){
+        pageStack.push(pageElement);
+        // appMainPageLayout.appendChild(pageElement);
+    }
+
+    function removeTopPage(){
+        let removedPage = pageStack.pop();
+        removedPage.remove();
+    }
+
+    // Return Interface
+    return {
+        remove : function(){removeTopPage();} ,
+        add : function(pageElement){addPage(pageElement);} ,
+        show : function(pageElement){showPage(pageElement);} ,
+        hide : function(pageElement){hidePage(pageElement);}
+    }
+
+})();
+
+let database = (function(){
+    let kids = [
+        "https://i.ibb.co/cbRYQXG/kids-1.webp",
+        "https://i.ibb.co/nnfgby5/kids-2.webp",
+        "https://i.ibb.co/Mf61P4X/kids-3.webp",
+        "https://i.ibb.co/NpCJ20x/kids-4.webp",
+        "https://i.ibb.co/fYz6R23/kids-5.webp",
+        "https://i.ibb.co/Gx86NqG/kids-6.webp",
+        "https://i.ibb.co/cJ3hk30/kids-7.webp",
+        "https://i.ibb.co/PTXJKdt/kids-8.webp",
+        "https://i.ibb.co/s1c4VvY/kids-9.webp",
+        "https://i.ibb.co/m6BXQm1/kids-10.webp"
+    ];
+    
+    let shows = [
+        "https://i.ibb.co/bH5V4RC/show-3.webp",
+        "https://i.ibb.co/sJMvCwB/show-4.webp",
+        "https://i.ibb.co/gTYYFKp/show-5.webp",
+        "https://i.ibb.co/4fm2kfy/show-6.webp",
+        "https://i.ibb.co/WghL5v1/show-7.webp",
+        "https://i.ibb.co/VthvfG4/show-8.webp",
+        "https://i.ibb.co/2tYLKp9/show-9.webp",
+        "https://i.ibb.co/K0v7Vyh/show-10.webp",
+        "https://i.ibb.co/t2RR4JP/show-1.webp",
+        "https://i.ibb.co/bJ7L0DL/show-2.webp"
+    ];
+    
+    
+    let news = [
+        "https://i.ibb.co/4SJ5dBQ/news-2.webp",
+        "https://i.ibb.co/nr6f6qX/news-3.webp",
+        "https://i.ibb.co/YBXBXxG/news-4.webp",
+        "https://i.ibb.co/pjX82Zv/news-5.webp",
+        "https://i.ibb.co/Fzf36Lf/news-1.webp",
+        "https://i.ibb.co/4SJ5dBQ/news-2.webp",
+        "https://i.ibb.co/nr6f6qX/news-3.webp",
+        "https://i.ibb.co/YBXBXxG/news-4.webp",
+        "https://i.ibb.co/pjX82Zv/news-5.webp",
+        "https://i.ibb.co/Fzf36Lf/news-1.webp"
+    ];
+    
+    
+    let movies = [
+        "https://i.ibb.co/M8qKpPP/movies-1.webp",
+        "https://i.ibb.co/p2Nj2fB/movies-2.webp",
+        "https://i.ibb.co/k9RjR5X/movies-3.webp",
+        "https://i.ibb.co/0stDKNV/movies-4.webp",
+        "https://i.ibb.co/m0KYtsw/movies-5.webp",
+        "https://i.ibb.co/MpwPCg4/movies-6.webp",
+        "https://i.ibb.co/kBbqbR6/movies-7.webp",
+        "https://i.ibb.co/YdPrr51/movies-8.webp",
+        "https://i.ibb.co/w6C57HZ/movies-9.webp",
+        "https://i.ibb.co/hDHNFDW/movies-10.webp"
+    ];
+    
+    let sports = [
+        "https://i.ibb.co/bRcvNRv/sports-1.webp",
+        "https://i.ibb.co/fQpWc87/sports-2.webp",
+        "https://i.ibb.co/gtZB9Vy/sports-3.webp",
+        "https://i.ibb.co/Zfvjbtp/sports-4.webp",
+        "https://i.ibb.co/f931244/sports-5.webp",
+        "https://i.ibb.co/VTVf1SP/sports-6.webp",
+        "https://i.ibb.co/vL1xWvm/sports-7.webp",
+        "https://i.ibb.co/bNBpnpZ/sports-8.webp",
+        "https://i.ibb.co/TqYYmYr/sports-9.webp",
+        "https://i.ibb.co/TLQQPqw/sports-10.webp"
+    ];
+
+    return {
+        getImages : function(type,count) {
+            let imagesArray = [];
+            let indexList = [0,1,2,3,4,5,6,7,8,9] ;
+
+            for(var i=0;i<count;i++) {
+                let index = Math.floor(Math.random()*indexList.length) ;
+                switch(type) {
+                    case "kids" :   if(kids[indexList[index]])   imagesArray.push(kids[indexList[index]] + "") ;break;
+                    case "sports" : if(sports[indexList[index]])   imagesArray.push(sports[indexList[index]]+ "") ;break;
+                    case "news" :   if(news[indexList[index]])   imagesArray.push(news[indexList[index]]+ "") ;break;
+                    case "shows" :  if(shows[indexList[index]])   imagesArray.push(shows[indexList[index]]+ "") ;break;
+                    case "movies" : if(movies[indexList[index]])   imagesArray.push(movies[indexList[index]]+ "") ;break;
+                }
+                indexList.splice(index,1) ;
+            }
+            return imagesArray ;
+        }
+    }
+
+})();
+
+</script>
